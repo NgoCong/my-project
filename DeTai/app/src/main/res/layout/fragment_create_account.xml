@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center" android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tvTitle_cna"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Creat New Account"
+    android:layout_marginBottom="20dp"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    />
+    <TextView
+        android:id="@+id/tvUserName_cna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle_cna"
+        android:layout_marginLeft="10dp"
+        android:text="User name:"
+        />
+   <EditText
+       android:id="@+id/edtUsername_cna"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/tvTitle_cna"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginTop="10dp"
+       android:hint="Enter User Name"/>
+    <TextView
+        android:id="@+id/tvEmail_cna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/edtUsername_cna"
+        android:text="Email:"
+        />
+    <EditText
+        android:id="@+id/edtEmail_cna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEmail_cna"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Email"/>
+    <TextView
+        android:id="@+id/tvPassword_cna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/edtEmail_cna"
+        android:text="Password:"
+        />
+    <EditText
+        android:id="@+id/edtPassword_cna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPassword_cna"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:hint="Enter Password"/>
+    <TextView
+        android:id="@+id/tvBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BirthDay:"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/edtPassword_cna"/>
+    <LinearLayout
+        android:id="@+id/lnbirthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBirthday">
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1/1/1990"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:enabled="false"
+        />
+       <Button
+           android:id="@+id/btnBirthday"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="3"
+           android:layout_marginRight="20dp"
+           android:drawableLeft="@drawable/ic_birthday_24dp"
+           android:paddingLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lntvroomsdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lnbirthday">
+    <TextView
+        android:id="@+id/tvRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Room:"
+        android:layout_weight="2"
+        android:layout_marginLeft="10dp"
+        />
+        <TextView
+            android:id="@+id/tvphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/lnedtroomsdt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/lntvroomsdt">
+    <AutoCompleteTextView
+        android:layout_weight="2"
+        android:id="@+id/actv_Room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/edtphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Enter Phone"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lnedtroomsdt">
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Reset"/>
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Creater"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

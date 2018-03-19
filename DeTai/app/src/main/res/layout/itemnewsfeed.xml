@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+<TextView
+    android:id="@+id/tvTitle_Item_Newsfeed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Thông báo về việc quản lý vận hành hầm xe, dịch vụ bảo vệ từ 1/4/2017"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#000"
+    android:gravity="center"/>
+
+<TextView
+    android:id="@+id/tvContent_Newsfeed"
+    android:textColor="#000"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="10sp"
+    android:text="
+Thông báo về việc quản lý vận hành hầm xe, dịch vụ bảo vệ từ 1/4/2017
+30/03/2017 CCPT Ban Quản Trị
+
+Kính gửi:     QUÝ CƯ DÂN CHUNG CƯ PHÚ THẠNH
+
+Thực hiện quy chế quản lý, sử dụng nhà chung cư thông tư số 02/2016/TT-BXD ngày 15/02/2016 của Bộ Xây Dựng;
+
+BAN QUẢN TRỊ CHUNG CƯ PHÚ THẠNH (BQT) XIN THÔNG BÁO:
+
+    BQT không tiếp tục ký kết hợp đồng trực tiếp với các đơn vị cung ứng dịch vụ bảo vệ an ninh và quản lý hầm xe tại chung cư Phú Thạnh.
+
+    Kể từ ngày 31/03/2017, các hợp đồng cung ứng dịch vụ tại chung cư Phú Thạnh được giao cho đơn vị quản lý vận hành nhà chung cư (hiện nay là Cty CP Môi Trường Sống Sạch), các hợp đồng trước đây do BQT ký trực tiếp với các đối tác không còn hiệu lực.
+
+    Công tác bảo vệ an ninh tại chung cư Phú Thạnh và công tác quản lý vận hành hầm xe được giao cho đơn vị quản lý vận hành nhà chung cư Phú Thạnh (BQL) hiện nay là Cty CP Môi Trường Sống Sạch đảm nhận và chịu trách nhiệm (Thực hiện đúng tinh thần thông tư 02).
+
+Kính thông báo quý cư dân, trân trọng./.
+"
+    android:layout_below="@id/tvTitle_Item_Newsfeed"/>
+<TextView
+    android:id="@+id/tvDate"
+    android:textColor="#000"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tvContent_Newsfeed"
+    android:layout_marginRight="10dp"
+    android:layout_alignParentRight="true"
+    android:text="10/10/2010"/>
+
+
+</RelativeLayout>
